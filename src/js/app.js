@@ -38,13 +38,13 @@ export function init() {
     lowcan.subscribe_by_event(function(data){
         console.log("can subscribe_by_event left temp CHANGED");
         console.log(data);
-    },"messages.hvac.temperature.left").then(function(result) {
+    },"hvac.temperature.left").then(function(result) {
         console.log("SUBSCRIBED TO can subscribe_by_event CHANGED");
     });
     lowcan.subscribe_by_event(function(data){
         console.log("can subscribe_by_event right temp CHANGED");
         console.log(data);
-    },"messages.hvac.temperature.right").then(function(result) {
+    },"hvac.temperature.right").then(function(result) {
         console.log("SUBSCRIBED TO can subscribe_by_event CHANGED");
     });
 
